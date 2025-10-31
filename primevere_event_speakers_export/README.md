@@ -13,6 +13,7 @@ This module adds a CSV export report for event speakers in Primevere events.
 The report contains the following fields:
 
 ### Session Information
+
 - Session ID
 - Session date
 - Session time
@@ -25,6 +26,7 @@ The report contains the following fields:
 - Session theme
 
 ### Speaker Information
+
 - Speaker ID
 - Speaker name
 - Speaker email
@@ -35,15 +37,18 @@ The report contains the following fields:
 - Time preferences
 
 ### Books
+
 - Book name
 - Publishing house
 - Provider
 
 ### Equipment
+
 - Electrical equipment
 - Equipment (number and object)
 
 ### Logistics
+
 - Meals (list of days)
 - Travel booking
 - Travel expense
@@ -56,6 +61,7 @@ The report contains the following fields:
 ## Installation
 
 This module depends on:
+
 - `primevere_event_custom`
 - `report_csv`
 
