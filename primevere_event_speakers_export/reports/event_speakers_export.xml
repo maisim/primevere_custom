@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="event_speakers_export" model="ir.actions.report">
+        <field name="name">Intervenants Export CSV</field>
+        <field name="model">event.event</field>
+        <field name="report_type">csv</field>
+        <field name="report_name">primevere_event_speakers_export.event_speakers_export</field>
+        <field name="report_file">event_speakers_export</field>
+        <field name="binding_model_id" ref="event.model_event_event" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>
