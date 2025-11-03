@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_event_track_form">
+        <field name="name">event.track.form</field>
+        <field name="model">event.track</field>
+        <field name="inherit_id" ref="website_event_track.view_event_track_form" />
+        <field name="arch" type="xml">
+
+            <field name="website_image" position="attributes">
+                <attribute
+                    name="options"
+                >{'accepted_file_extensions': 'image/jpeg,image/png'}</attribute>
+            </field>
+
+            <field name="color" position="after">
+                <field name="theme_ids" widget="many2many_tags" />
+                <field name="format_id" />
+            </field>
+
+            <field name="date" position="after">
+                <field name="all_event" />
+            </field>
+
+            <field name="user_id" position="after">
+                <field name="welcomer_id" />
+            </field>
+
+            <field name="equipment_line_ids" position="before">
+                <field name="electricity_watt" />
+            </field>
+
+            <xpath expr="//group" position="after">
+                <group name="primevere_custom">
+                    <group name="left">
+                        <field name="commission_summary" />
+                    </group>
+                    <group name="right">
+                        <field name="information" />
+                        <field name="contacts" />
+                    </group>
+                </group>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page name="communication" string="Com Summary">
+                    <group>
+                        <field name="com_info_speaker_short" />
+                        <field name="com_info_speaker_long" />
+                        <field name="com_info_event" />
+                        <field name="com_info_contacts" />
+                        <field name="com_info_age" />
+                        <field name="com_info_note" />
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_event_track_tree" model="ir.ui.view">
+        <field name="name">event.track.tree</field>
+        <field name="model">event.track</field>
+        <field name="inherit_id" ref="website_event_track.view_event_track_tree" />
+        <field name="arch" type="xml">
+            <field name="name" position="before">
+                <field name="color" position="move" />
+                <field name="user_id" optional="show" />
+                <field name="dates" widget="many2many_tags" optional="show" />
+                <field name="duration" widget="float_time" optional="hide" />
+                <field name="location_id" optional="hide" />
+            </field>
+            <field name="name" position="after">
+                <field name="theme_ids" widget="many2many_tags" optional="hide" />
+                <field name="format_id" optional="hide" />
+            </field>
+            <field name="partner_name" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </field>
+            <field name="partner_email" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </field>
+            <field name="partner_phone" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </field>
+        </field>
+    </record>
+
+</odoo>

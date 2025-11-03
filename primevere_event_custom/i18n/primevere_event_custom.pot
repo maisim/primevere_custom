@@ -1,0 +1,273 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* primevere_event_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-12 15:48+0000\n"
+"PO-Revision-Date: 2024-10-12 15:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__all_event
+msgid "All Event"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__com_info_age
+msgid "Com Info Age"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__com_info_contacts
+msgid "Com Info Contacts"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__com_info_event
+msgid "Com Info Event"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__com_info_note
+msgid "Com Info Note"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__com_info_speaker_long
+msgid "Com Info Speaker Long"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__com_info_speaker_short
+msgid "Com Info Speaker Short"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model_terms:ir.ui.view,arch_db:primevere_event_custom.view_event_track_form
+msgid "Com Summary"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__commission_summary
+msgid "Commission Summary"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker_travel_booking__constraints
+msgid "Constraints"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model,name:primevere_event_custom.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__contacts
+msgid "Contacts"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_format__create_uid
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_theme__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_format__create_date
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_theme__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker__curriculum_vitae
+msgid "Curriculum Vitae"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker_travel_booking__discount_info
+msgid "Discount Info"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_format__display_name
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_theme__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__electricity_watt
+msgid "Electricity Watt"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model,name:primevere_event_custom.model_event_track
+msgid "Event Track"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__format_id
+msgid "Format"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_format__id
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_theme__id
+msgid "ID"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__information
+msgid "Information"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker__invitation_code
+msgid "Invitation Code"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker__invitation_number
+msgid "Invitation Number"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_res_partner__journal
+#: model:ir.model.fields,field_description:primevere_event_custom.field_res_users__journal
+msgid "Journal"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_format____last_update
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_theme____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_format__write_uid
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_theme__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_format__write_date
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_theme__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model_terms:ir.ui.view,arch_db:primevere_event_custom.view_event_track_speaker_form
+msgid "Logistic"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_format__name
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_theme__name
+msgid "Name"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker__need_reserved_car_place
+msgid "Need Reserved Car Place"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker__need_ticket
+msgid "Need Ticket"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_res_partner__nb_flyer
+#: model:ir.model.fields,field_description:primevere_event_custom.field_res_users__nb_flyer
+msgid "Number of flyers"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_res_partner__nb_poster
+#: model:ir.model.fields,field_description:primevere_event_custom.field_res_users__nb_poster
+msgid "Number of posters"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker__slot_wishes
+msgid "Slot Wishes"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model,name:primevere_event_custom.model_event_track_speaker_travel_booking
+msgid "Speaker Travel Booking"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model,name:primevere_event_custom.model_event_track_speaker_travel_expense
+msgid "Speaker Travel Expense"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track_speaker_travel_expense__status
+msgid "Status"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__theme_ids
+msgid "Themes"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_res_partner__ticket_code
+#: model:ir.model.fields,field_description:primevere_event_custom.field_res_users__ticket_code
+msgid "Ticket Code"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields.selection,name:primevere_event_custom.selection__event_track_speaker_travel_expense__status__to_pay_in_hand
+msgid "To Pay In Hand"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.ui.menu,name:primevere_event_custom.menu_event_format
+msgid "Track Format"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.actions.act_window,name:primevere_event_custom.action_track_format
+msgid "Track Formats"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model,name:primevere_event_custom.model_event_track_speaker
+msgid "Track Speaker"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.ui.menu,name:primevere_event_custom.menu_event_theme
+msgid "Track Theme"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.actions.act_window,name:primevere_event_custom.action_track_theme
+msgid "Track Themes"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model.fields,field_description:primevere_event_custom.field_event_track__welcomer_id
+msgid "Welcomer"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model,name:primevere_event_custom.model_event_track_format
+msgid "event.track.format"
+msgstr ""
+
+#. module: primevere_event_custom
+#: model:ir.model,name:primevere_event_custom.model_event_track_theme
+msgid "event.track.theme"
+msgstr ""

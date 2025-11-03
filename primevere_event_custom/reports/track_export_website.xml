@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="track_export_website" model="ir.actions.report">
+        <field name="name">Website Export CSV</field>
+        <field name="model">event.event</field>
+        <field name="report_type">csv</field>
+        <field name="report_name">primevere_event_custom.track_export_website</field>
+        <field name="report_file">track_export_website</field>
+        <field name="binding_model_id" ref="event.model_event_event" />
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

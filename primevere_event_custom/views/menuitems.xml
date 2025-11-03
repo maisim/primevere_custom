@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<odoo>
+    <!-- Show Track -->
+    <record model="ir.ui.menu" id="website_event_track.menu_event_track">
+        <field
+            name="groups_id"
+            eval="[(6,0,[ref('event.group_event_registration_desk')])]"
+        />
+    </record>
+
+    <!-- Theme and Format -->
+    <record model="ir.actions.act_window" id="action_track_theme">
+        <field name="name">Track Themes</field>
+        <field name="res_model">event.track.theme</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_track_format">
+        <field name="name">Track Formats</field>
+        <field name="res_model">event.track.format</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_event_theme"
+        name="Track Theme"
+        action="action_track_theme"
+        parent="event.menu_event_configuration"
+        groups="event.group_event_registration_desk"
+    />
+
+    <menuitem
+        id="menu_event_format"
+        name="Track Format"
+        action="action_track_format"
+        parent="event.menu_event_configuration"
+        groups="event.group_event_registration_desk"
+    />
+
+</odoo>

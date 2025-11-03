@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="view_event_track_speaker_travel_booking_form">
+        <field name="name">event.track.speaker.travel.booking.form</field>
+        <field name="model">event.track.speaker.travel.booking</field>
+        <field
+            name="inherit_id"
+            ref="event_track_speaker_travel.view_event_track_speaker_booking_form"
+        />
+        <field name="arch" type="xml">
+           <field name="speaker_id" position="after">
+            <field name="constraints" />
+            <field name="discount_info" />
+        </field>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record model="ir.ui.view" id="view_event_track_speaker_form">
+        <field name="name">event.track.speaker.form</field>
+        <field name="model">event.track.speaker</field>
+        <field
+            name="inherit_id"
+            ref="event_track_multi_speaker.view_event_track_speaker_form"
+        />
+        <field name="arch" type="xml">
+
+            <field name="biography" position="after">
+                <field name="curriculum_vitae" />
+            </field>
+
+            <field name="image" position="after">
+                <field name="slot_wishes" />
+            </field>
+
+            <xpath expr="//notebook" position="inside">
+                <page name="logistic" string="Logistic">
+                    <group>
+                        <field name="need_reserved_car_place" />
+                        <field name="need_ticket" />
+                        <field name="invitation_number" />
+                        <field name="invitation_code" />
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

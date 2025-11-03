@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.actions.server" id="download_track_website_image">
+        <field name="name">Download Track Website Images</field>
+        <field name="model_id" ref="event.model_event_event" />
+        <field name="binding_model_id" ref="event.model_event_event" />
+        <field name="binding_view_types">form</field>
+        <field name="state">code</field>
+        <field name="code">
+            action = {
+                "type": "ir.actions.act_url",
+                "url": (
+                    f"/primevere_event_custom/event/{record.id}"
+                    "/tracks/website_image/download"
+                ),
+                "target": "self",
+            }
+        </field>
+    </record>
+
+</odoo>
