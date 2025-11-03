@@ -30,11 +30,16 @@ class EventSpeakersExportCSV(models.AbstractModel):
         # Session date and time - uses multi-date track dates if available
         session_date = ""
         session_time = ""
-        if hasattr(track, "dates") and track.dates:
-            # Utilise la première date si plusieurs dates
+
+        # Special formatting for "all event" sessions (en permanence)
+        if track.all_event:
+            session_date = "00-00-0000"
+            session_time = "00:00:00"
+        elif hasattr(track, "dates") and track.dates:
+            # Use first date if multiple dates
             first_date = track.dates[0]
             session_date = first_date.date
-            # Conversion de l'heure flottante en format HH:MM
+            # Convert float hour to HH:MM format
             hour = int(first_date.hour)
             minute = round(60 * (first_date.hour - hour))
             session_time = datetime.time(hour=hour, minute=minute).isoformat(

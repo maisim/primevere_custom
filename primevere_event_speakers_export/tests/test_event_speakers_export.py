@@ -253,6 +253,8 @@ class TestEventSpeakersExport(TransactionCase):
         # Check track information
         self.assertIn("Track with speakers", csv_content)
         self.assertIn("Oui", csv_content)  # all_event = True
+        self.assertIn("00-00-0000", csv_content)  # Special date format for all_event
+        self.assertIn("00:00:00", csv_content)  # Special time format for all_event
         self.assertIn("Technology, Innovation", csv_content)  # themes
 
         # Check speaker 1 information
@@ -708,3 +710,39 @@ class TestEventSpeakersExport(TransactionCase):
         self.assertIn(
             "Oui", csv_content
         )  # Should appear for need_ticket and need_parking (both True for speaker1)
+
+    def test_all_event_special_formatting(self):
+        """Test that sessions marked as 'all_event' use special date/time formatting"""
+        # Create a track marked as "en permanence" (all_event=True)
+        track = self.env["event.track"].create(
+            {
+                "name": "Permanent session",
+                "event_id": self.event.id,
+                "duration": 0.0,
+                "all_event": True,
+                "format_id": self.format.id,
+                "location_id": self.location.id,
+                "speaker_ids": [(6, 0, [self.speaker1.id])],
+            }
+        )
+
+        report = self.env[
+            "report.primevere_event_speakers_export.event_speakers_export"
+        ]
+
+        # Simulate CSV writing
+        output = io.StringIO()
+        writer = csv.DictWriter(
+            output, fieldnames=report.csv_report_options()["fieldnames"], delimiter=";"
+        )
+
+        report._write_track_row(writer, track, self.speaker1)
+
+        output.seek(0)
+        csv_content = output.getvalue()
+
+        # Verify special date/time formatting for all_event sessions
+        self.assertIn("00-00-0000", csv_content)  # Special date format
+        self.assertIn("00:00:00", csv_content)  # Special time format
+        self.assertIn("Permanent session", csv_content)  # Track name
+        self.assertIn("Oui", csv_content)  # all_event = True
